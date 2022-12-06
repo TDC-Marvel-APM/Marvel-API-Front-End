@@ -32,7 +32,6 @@ function App() {
         // handle error
         console.log(error);
       })
-    transaction = apm.getCurrentTransaction()
     if (transaction) transaction.end()
   }
 
@@ -59,6 +58,7 @@ function App() {
   const deleteHero = () => {
     var transaction = apm.startTransaction("Delete Hero", "Hero");
     transaction.addLabels(forms);
+    var click = apm.getCurrentTransaction()
     axios.delete(`http://localhost:8080/delete/${forms.id}`)
         .then(function (response) {
           // handle success
@@ -78,14 +78,15 @@ function App() {
           // handle error
           console.log(error);
     })
-    transaction = apm.getCurrentTransaction()
     if (transaction) transaction.end()
+    if (click) click.end()
   }
 
   const submitForms = () => {
     if(forms.id){
       var transaction = apm.startTransaction("Update Hero", "Hero");
       transaction.addLabels(forms);
+      var click = apm.getCurrentTransaction()
       axios.put(`http://localhost:8080/update/${forms.id}`, forms)
         .then(function (response) {
           // handle success
@@ -100,6 +101,8 @@ function App() {
             "type": "",
             "description": ""
           })
+          if (transaction) transaction.end()
+          if (click) click.end()
         })
         .catch(function (error) {
           // handle error
@@ -108,6 +111,7 @@ function App() {
     } else {
       transaction = apm.startTransaction("Add Hero", "Hero");
       transaction.addLabels(forms);
+      click = apm.getCurrentTransaction()
       axios.post('http://localhost:8080/add', forms)
         .then(function (response) {
           // handle success
@@ -128,8 +132,8 @@ function App() {
           console.log(error);
         })
     }
-    transaction = apm.getCurrentTransaction()
     if (transaction) transaction.end()
+    if (click) click.end()
   }
 
   useEffect(() => {
