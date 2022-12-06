@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  min-height: 900px;
+  width: 100%
 }
 
 .App-logo {
@@ -35,4 +37,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.textDescriptionHeros{
+    font-family: 'Kanit';
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
 }
