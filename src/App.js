@@ -57,6 +57,8 @@ function App() {
   }
 
   const deleteHero = () => {
+    var transaction = apm.startTransaction("Delete Hero", "Hero");
+    transaction.addLabels(forms);
     axios.delete(`http://localhost:8080/delete/${forms.id}`)
         .then(function (response) {
           // handle success
@@ -76,6 +78,8 @@ function App() {
           // handle error
           console.log(error);
     })
+    transaction = apm.getCurrentTransaction()
+    if (transaction) transaction.end()
   }
 
   const submitForms = () => {
