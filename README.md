@@ -3,7 +3,7 @@
 ![](https://i.pinimg.com/originals/37/53/1d/37531d30ac17fb068e8e9153b67d6278.gif)
 
 ## Sobre
-Projeto feito para demonstração de Execução de APM com ELK(Elastic, Logstash e Kibana) na palestra sobre ELK, APM e Observabilidade - Observabilidade e implementação na pratica e seus conceitos de uso.
+Projeto feito para demonstração de Execução de APM RUN com ELK(Elastic, Logstash e Kibana) na palestra sobre Garçom, traz um RUM para minhas aplicações Front-end
 
 Versão do NodeJs - v16.13.2
 
@@ -24,12 +24,6 @@ Versão do NPM - 8.10.0
 10. Para ver a API com o teste funcionando podemos rodar o comando npm run test
 
 11.Dentro do projeto vocês verão um arquivo chamado Marvel Universe.postman_collection.json com ele vocês conseguem importar no seu postman e utilizar as rotas desse projeto
-
-## Sobre como eu montei essa API e conceitos de Back-end 🦋
-
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDDAJ5fxuiCWJIvtYbHIq-1K0PL3j2-1bhKGdNL-9bf_jgZ2txPqDPBHL5F_2iP5N4GHY&usqp=CAU)
-
-https://www.youtube.com/watch?v=mZh4Wd_Ijxk&t=1s
 
 
 
