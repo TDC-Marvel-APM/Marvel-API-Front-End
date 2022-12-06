@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Marvel-API-NodeJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://i.pinimg.com/originals/37/53/1d/37531d30ac17fb068e8e9153b67d6278.gif)
 
-## Available Scripts
+## Sobre
+Projeto feito para demonstração de Execução de APM com ELK(Elastic, Logstash e Kibana) na palestra sobre ELK, APM e Observabilidade - Observabilidade e implementação na pratica e seus conceitos de uso.
 
-In the project directory, you can run:
+Versão do NodeJs - v16.13.2
 
-### `npm start`
+Versão do NPM - 8.10.0
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Passo a passo de como utilizar 💡
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+1. Para podermos utilizar precisaremos criar o arquivo .env dentro do nosso projeto, nele ficará a parte de variaveis de ambiente da nossa aplicação
+2. Acesse o site https://cloud.mongodb.com/ e crie sua conta por lá
+3. Acessando sua conta crie um novo projeto e deixe o nome TDC - Testes e em add membros deixe como está no caso ele vai deixar você seu usuario de cadastro como owner
+4. depois de criar clique na aba Network Access e clicando nele clica em Add IP Address e seleciona ALLOW ACCESS FROM ANYWHERE e clica em confirm
+5. depois de criar clique na aba clica em Add New Database User e em Password Authentication coloque um user e passwoard que desejar
+6. Clica na aba de DataBase clica em Create e seleciona o banco share, e clica em confirm, ele demora um pouco para carregar mas logo ja estará criado seu banco
+7. Clica em Connect e logo em seguida seleciona connect your application e nele você  receberá na parte Add your connection string into your application code a url do nosso banco, copia e cola isso dentro do seu env dessa maneira: MONGO=<suaURL>
+8. no .env coloque tambem PORT=8080
+9. antes de iniciar rode o npm i ou npm install
+10. Para ver a API com o teste funcionando podemos rodar o comando npm run test
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+11.Dentro do projeto vocês verão um arquivo chamado Marvel Universe.postman_collection.json com ele vocês conseguem importar no seu postman e utilizar as rotas desse projeto
 
-### `npm run build`
+## Sobre como eu montei essa API e conceitos de Back-end 🦋
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDDAJ5fxuiCWJIvtYbHIq-1K0PL3j2-1bhKGdNL-9bf_jgZ2txPqDPBHL5F_2iP5N4GHY&usqp=CAU)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://www.youtube.com/watch?v=mZh4Wd_Ijxk&t=1s
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tecnologias usadas nesse projeto projeto 💻
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 🍃 [MongoDB](https://www.mongodb.com/pt-br)
+- 💎 [NodeJS](https://nodejs.org/en/)
+- 🦌 [ELK](https://www.elastic.co/pt/what-is/elk-stack)
+- 💌 [Postman](https://www.postman.com/)
+- 🧪 [React](https://pt-br.reactjs.org/)
+- 🌼 [Elastic](https://www.elastic.co/pt/)
